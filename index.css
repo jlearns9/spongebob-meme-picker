@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "krabbypatty";
+    src: url("/KrabbyPatty.ttf");
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    text-align: center;
+}
+
+/* Typography */
+header {
+    background-image: url("images/SpongeBob-Banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+main {
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("images/sb-background.jpg");
+    height: 1000px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid red;
+}
+
+h1 {
+    border: 1px solid red;
+    color: gray;
+    font-size: 48px;
+    font-family: "krabbypatty";
+    margin: 50px;
+}
+
+/* ID Selectors */
+
+
+/* Class Selectors */
+
+
+/* Combinators */
