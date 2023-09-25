@@ -25,17 +25,21 @@ main {
     height: 1000px;
     background-position: center;
     background-size: cover;
-    border: 1px solid red;
 }
 
 h1 {
-    border: 1px solid red;
-    color: gray;
+    background: linear-gradient(45deg, #f06, #9f6);
+    color: transparent;
+    display: inline-block;
     font-size: 48px;
     font-family: "krabbypatty";
     margin: 50px;
+    -webkit-background-clip: text;
 }
 
+button {
+    margin: 50px;
+}
 /* ID Selectors */
 
 
@@ -43,3 +47,21 @@ h1 {
 
 
 /* Combinators */
+
+/* Keyframes */
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+h1.floating {
+    animation: float 2s ease-in-out infinite;
+  }

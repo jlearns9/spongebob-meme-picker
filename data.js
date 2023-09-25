@@ -1,4 +1,4 @@
-export const spongeBobMemes = [
+export const spongeBobMemeData = [
     {
         emotionTags: ["sad"],
         isGif: false,
@@ -141,12 +141,6 @@ export const spongeBobMemes = [
         emotionTags: ["insomniac"],
         isGif: false,
         image: "squidsleepy.jpg",
-        alt: "A SpongeBob Meme",
-    },
-    {
-        emotionTags: [""],
-        isGif: true,
-        image: "2.gif",
         alt: "A SpongeBob Meme",
     },
     {
