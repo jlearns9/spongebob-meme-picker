@@ -22,7 +22,7 @@ header {
 
 main {
     background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("images/sb-background.jpg");
-    height: 1000px;
+    height: 500px;
     background-position: center;
     background-size: cover;
 }
@@ -44,8 +44,40 @@ button {
 
 
 /* Class Selectors */
+.radio {
+  border: 1px solid red;
+  width: 200px;
+  margin: auto;
+}
 
+.highlight {
+  background-color: #fff0ee;
+  color: #bd301d;
+  font-weight: bold;
+  accent-color: #bd301d;
+}
 
+.meme-modal{
+  display: none; /*flex when displayed*/
+  position: fixed;
+  margin: auto;
+  top: 100px;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid w#67595e;
+  border-radius: 5px;
+  width: 420px;
+  height: 490px;
+  background-color: #fff0ee;
+}
+
+.meme-img{
+  max-width: 340px;
+  max-height: 420px;
+  border-radius: 5px;
+}
 /* Combinators */
 
 /* Keyframes */
