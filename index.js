@@ -12,6 +12,7 @@ const testBtn = document.getElementById("testBtn")
 
 spongeBobRadios.addEventListener('change', highlightSelectedEmotion)
 getImgBtn.addEventListener('click', renderMeme)
+closeMemeModalBtn.addEventListener("click", closeMemeModal)
 
 
 
@@ -102,7 +103,7 @@ function getMatchingMemesArray() {
 
 // Step 5 - When the X button is pressed, it closes the meme and starts over
 function closeMemeModal() {
-dfas
+    memeModal.style.display = "none"
 }
 
 // Console Log Button Tester //
