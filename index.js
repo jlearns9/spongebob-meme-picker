@@ -61,7 +61,12 @@ function highlightSelectedEmotion(e) {
 }
 
 // Step 4 - When the get image button is pressed, it displays a meme
+
+// 4.1 - Renders the meme on the page when get image button is clicked
 function renderMeme() {
+    setTimeout(function() {
+        document.addEventListener('click', closeMemeModalTwo)   
+    }, 250)
     const memeObject = getSingleMemeObject()
     memeModalInner.innerHTML = `
         <img
@@ -73,6 +78,7 @@ function renderMeme() {
     memeModal.style.display = "flex"
 }
 
+// 4.2 - Grabs a single meme at randon
 function getSingleMemeObject() {
     const memesArray = getMatchingMemesArray()
 
@@ -84,6 +90,7 @@ function getSingleMemeObject() {
     }
 }
 
+//4.3 - 
 function getMatchingMemesArray() {
     if(document.querySelector('input[type="radio"]:checked')){
         const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
@@ -101,9 +108,22 @@ function getMatchingMemesArray() {
     }
 }
 
-// Step 5 - When the X button is pressed, it closes the meme and starts over
+// Step 5 - Closes the meme and starts over
+
+//5.1 - Sets meme modal display to none
 function closeMemeModal() {
     memeModal.style.display = "none"
+
+}
+
+//5.2 - Removes the event listener that allows you to close the modal by clicking anywhere on the page
+function closeMemeModalTwo(e) {
+    if (e.target.closest(".meme-modal")) {
+        console.log("hello")
+    } else {
+        closeMemeModal()
+        document.removeEventListener('click', closeMemeModalTwo)
+    }
 }
 
 // Console Log Button Tester //
